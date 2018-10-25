@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/experiment.css">
+    <script src="static/js/jquery-1.11.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>        
+
+    <title>Experiment</title>
+</head>
+
+<body>
+    <div class="container">
+    
+            <!--TIMER-->            
+            <h3><div id="timer">
+                čas
+            </div></h3> 
+            <!--|TIMER-->   
+                 
+                <!--zahajeni-->
+                <div id="zahajeni">                   
+                    <div class="col-xs-12  col-sm-8 col-sm-offset-2">  
+                        <div class="jumbotron">
+                            <h2>Ahoj!</h2> 
+                            
+                            Vítám Tě na ekonomickém experimentu, který jsem si pro Tebe připravil v rámci své diplomové práce.<br><br>
+                            
+                            Experiment se skládá ze dvou kol řešení matematických úloh. Na vyřešení úloh v každém kole máš 10 
+                            
+                            minut, příklady můžeš řešit v libovolném pořadí. Po skončení prvního kola máš 10 minut, během kterých 
+                            
+                            si můžeš doplnit své chybějící znalosti pomocí internetu, poté bude následovat druhé kolo. Po skončení 
+                            
+                            druhého kola se Tě zeptám na několik otázek týkajících se experimentu. Jakmile s nimi budou všichni 
+                            
+                            hotovi a experiment ukončí, řeknu ještě pár slov a poté si ke mně přijdeš pro finanční odměnu. Za účast v 
+                            
+                            experimentu budeš odměněn/a částkou 100 Kč a dobrým pocitem, že jsi mi velkou měrou pomohl/a 
+                            
+                            v dokončení diplomky. <span style="font-size:16pt">&#9786;</span> <br><br>
+                            
+                            
+                            <strong>Při řešení úloh můžeš používat papír a tužku, které leží na stole před Tebou a vědeckou 
+                            
+                            kalkulačku ve Windows. Mobilní telefony a vlastní kalkulačky jsou zakázány, stejně jako používání 
+                            
+                            internetu během samotného řešení příkladů.</strong>  <br><br>
+                            
+                            
+                            Pokud máš nějaké otázky, zeptej se na ně, prosím, teď hned. V průběhu experimentu to již nebude 
+                            
+                            možné.   <br><br>
+                            
+                            
+                            Věřím, že se Ti experiment bude líbit a děkuji za účast! <br><br>
+                                                        
+                         
+         
+                            
+                            <h3>Martin Ovčaří</h3>
+                        </div>                
+                        <input type="submit" id="startButton" value="Zahájit" onClick="zahajit()"  class="btn btn-primary btn-lg center-block ">
+                    </div>
+                </div>
+                <!--|zahajeni-->                 
+                             
+            <div class="col-xs-12  col-sm-8 col-sm-offset-2">                   
+                <!--priklady-->
+                    <div id="priklady" style="display: block;">
+    <div class="well">
+        <h3>Příklad 1</h3>
+        <hr>
+        <h4>Vyřešte pro x: log<sub>6</sub> (x+1) + log<sub>6</sub> x = 1</h4> 
+     
+        <input type="text" class="odpoved" name="1" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 2</h3>
+        <hr>
+        <h4>Na běžecké trati běží 8 závodníků. Do finále postupují první tři. Kolik je možností na postupující trojici?</h4> 
+     
+        <input type="text" class="odpoved" name="2" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 3</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 2x - 3y + z + 2u = 0 <br><br> 3x + y - 2z – u = 6 <br><br> 4x – 2y - 3z - 4u = -6 <br><br> x + 2y + 3z - 2u = -7</h4> 
+     
+        
+        <label>u</label>     
+        <div>
+            <input class="odpoved" name="3-u" type="text" autocomplete="off">
+        </div>        
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="3-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="3-y" type="text" autocomplete="off">
+        </div>        
+        
+        <label>z</label>     
+        <div>
+            <input class="odpoved" name="3-z" type="text" autocomplete="off">
+        </div>        
+    </div>
+
+    <div class="well">
+        <h3>Příklad 4</h3>
+        <hr>
+        <h4>Vyřešte pro x: log<sub>2</sub> (x+1) = 3 </h4> 
+     
+        <input type="text" class="odpoved" name="4" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 5</h3>
+        <hr>
+        <h4>Kolika způsoby lze postavit do řady vedle sebe na poličku 15 různých knih?</h4> 
+     
+        <input type="text" class="odpoved" name="5" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 6</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé:<br><br> x + y + 2z = -1 <br><br> 2x – y + 2z = -4 <br><br> 4x + y + 4z = -2</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="6-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="6-y" type="text" autocomplete="off">
+        </div>        
+        
+        <label>z</label>     
+        <div>
+            <input class="odpoved" name="6-z" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 7</h3>
+        <hr>
+        <h4>Vyřešte pro x: -3 + log x = -1 </h4> 
+     
+        <input type="text" class="odpoved" name="7" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 8</h3>
+        <hr>
+        <h4>Vyčíslete: 8!/4!</h4> 
+     
+        <input type="text" class="odpoved" name="8" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 9</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 7x - 3y = 15 <br><br> 5x + 6y = 27</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="9-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="9-y" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 10</h3>
+        <hr>
+        <h4>Vyřešte pro x: log 1000 = x</h4> 
+     
+        <input type="text" class="odpoved" name="10" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 11</h3>
+        <hr>
+        <h4>Vyčíslete: 5!</h4> 
+     
+        <input type="text" class="odpoved" name="11" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 12</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 3x – y = 8 <br><br> 2x + y = 7</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="12-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="12-y" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+  
+
+<button type="button" id="endButton" onclick="konec_prvni(true)" class="btn btn-primary center-block">Ukončit</button> </div>
+
+                <!--|priklady-->
+                
+                <!--hodnoceni-->
+                <div id ="hodnoceni" class="well">
+                    Gratuluji Ti k úspěšnému dokončení experimentu a děkuji Ti za účast! Velmi si vážím Tvého času a energie, kterou jsi do toho dal/a.
+                </div>
+                <div id="hodnoceni2" class="well" style="display: none;">Výsledky prvního kola<br><br>
+
+
+
+
+
+
+    <strong>Logaritmické funkce:</strong> 4 ze 4 špatně.<br>
+    
+    <strong>Kombinatorika:</strong> 4 ze 4 špatně.<br>
+    
+    
+    <strong>Soustavy rovnic:</strong> 4 ze 4 špatně.<br>
+
+
+
+
+
+                           
+    
+       </div>               
+                <div id="hodnoceni1" class="well" style="display: block;">
+    Gratuluji k&nbsp;dokončení první části experimentu, dobrá práce! Oceňuji, že tomu věnuješ tolik úsilí a energie.<br><br>
+    
+    Níže jsou Tvé výsledky seřazeny podle typů příkladů. U výsledku také najdeš uvedena klíčová slova, která Ti mohou pomoci v&nbsp;další části úkolu.<br><br>
+    
+    <hr> 
+    <strong>Logaritmické funkce:</strong> 4 ze 4 špatně.<br>
+    <strong>Klíčová slova: </strong>logaritmické funkce, základ logaritmu, věty o logaritmech.<br><br>
+
+       
+                
+            <h3>Příklad 1</h3>
+            <h4>Vyřešte pro x: log<sub>6</sub> (x+1) + log<sub>6</sub> x = 1</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 2 <br>
+                                                                
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 4</h3>
+            <h4>Vyřešte pro x: log<sub>2</sub> (x+1) = 3 </h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 7 <br>
+                                                                
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 7</h3>
+            <h4>Vyřešte pro x: -3 + log x = -1 </h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 100 <br>
+                                                                
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 10</h3>
+            <h4>Vyřešte pro x: log 1000 = x</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 3 <br>
+                                                                
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+              
+        
+    <hr>
+        
+    <strong>Kombinatorika:</strong> 4 ze 4 špatně.<br>
+    <strong>Klíčová slova: </strong>faktoriál, permutace, kombinace, kombinační číslo.<br><br>
+    
+       
+                                                                    
+       
+                
+            <h3>Příklad 2</h3>
+            <h4>Na běžecké trati běží 8 závodníků. Do finále postupují první tři. Kolik je možností na postupující trojici?</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 56 <br>
+                   
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 5</h3>
+            <h4>Kolika způsoby lze postavit do řady vedle sebe na poličku 15 různých knih?</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správné odpovědi:
+                    
+                        
+                            1307674368000,
+                               
+                    
+                                   
+                            15!
+                               
+                                                                                  
+                   
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 8</h3>
+            <h4>Vyčíslete: 8!/4!</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 1680 <br>
+                   
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 11</h3>
+            <h4>Vyčíslete: 5!</h4>        
+            
+                             
+                Vaše odpověď:  <br>
+                
+                    Správná odpověď: 120 <br>
+                   
+                                               
+                                                                    
+       
+                                                                    
+         
+    
+    <hr>
+        
+    <strong>Soustavy rovnic:</strong> 4 ze 4 špatně.<br>
+    <strong>Klíčová slova: </strong>soustavy rovnic o více neznámých, sčítací metoda, substituční metoda, matice.<br><br>
+    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 3</h3>
+            <h4>Určete hodnoty pro všechny neznámé: <br><br> 2x - 3y + z + 2u = 0 <br><br> 3x + y - 2z – u = 6 <br><br> 4x – 2y - 3z - 4u = -6 <br><br> x + 2y + 3z - 2u = -7</h4>        
+            
+            
+                Vaše odpověď:<br> 
+                           
+                            y =  <br>  
+                           
+                            x =  <br>  
+                           
+                            z =  <br>  
+                           
+                            u =  <br>  
+                                       
+                Správná odpověď: <br> 
+                           
+                            y = 2 <br>  
+                           
+                            x = 1 <br>  
+                           
+                            z = -2 <br>  
+                           
+                            u = 3 <br>  
+                                       
+                        <br>      
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 6</h3>
+            <h4>Určete hodnoty pro všechny neznámé:<br><br> x + y + 2z = -1 <br><br> 2x – y + 2z = -4 <br><br> 4x + y + 4z = -2</h4>        
+            
+            
+                Vaše odpověď:<br> 
+                           
+                            y =  <br>  
+                           
+                            x =  <br>  
+                           
+                            z =  <br>  
+                                       
+                Správná odpověď: <br> 
+                           
+                            y = 2 <br>  
+                           
+                            x = 1 <br>  
+                           
+                            z = -2 <br>  
+                                       
+                        <br>      
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 9</h3>
+            <h4>Určete hodnoty pro všechny neznámé: <br><br> 7x - 3y = 15 <br><br> 5x + 6y = 27</h4>        
+            
+            
+                Vaše odpověď:<br> 
+                           
+                            y =  <br>  
+                           
+                            x =  <br>  
+                                       
+                Správná odpověď: <br> 
+                           
+                            y = 2 <br>  
+                           
+                            x = 3 <br>  
+                                       
+                        <br>      
+                                               
+                                                                    
+       
+                                                                    
+       
+                                                                    
+       
+                
+            <h3>Příklad 12</h3>
+            <h4>Určete hodnoty pro všechny neznámé: <br><br> 3x – y = 8 <br><br> 2x + y = 7</h4>        
+            
+            
+                Vaše odpověď:<br> 
+                           
+                            y =  <br>  
+                           
+                            x =  <br>  
+                                       
+                Správná odpověď: <br> 
+                           
+                            y = 1 <br>  
+                           
+                            x = 3 <br>  
+                                       
+                        <br>      
+                                               
+                                                                    
+         
+    
+    <hr>
+    
+    
+    
+    Ještě jednou bych chtěl zmínit, že si zatím vedeš opravdu dobře a věřím, že v&nbsp;druhém kole řešení úloh budeš ještě úspěšnější, než v&nbsp;tom prvním.<br><br>
+
+    Nyní máš k&nbsp;dispozici 10 minut, které můžeš využít k&nbsp;doplnění svých znalostí z&nbsp;matematiky. Můžeš k&nbsp;tomu využít uvedených klíčových slov. Pokud chceš zahájit druhé kolo řešení úloh dříve, než uplyne 10 minut, můžeš kdykoliv kliknout na tlačítko „Pokračovat“.
+    
+
+
+                        
+    
+
+
+
+
+
+
+
+
+
+
+                           
+    
+       </div>       
+                <div id="konecneHodnoceni" class="well">                                          
+                    Celkový počet špatně vypočítaných příkladů z prvního kola: <span id="celkemPrvniKolo"></span><br> 
+                    Celkový počet z druhého kola: <span id="celkemDruheKolo"></span><br> 
+                    Zlepšení/zhoršení o <span id="celkemZlepseni"></span> příkladů.<br>                                               
+                </div>                                   
+                <!--|hodnoceni-->
+                
+                <!--ukonecni pauzi-->
+                <div id="konecPrestavka">
+                    <button type="button" id="endButton" onClick="konec_prestavka(true)"  class="btn btn-primary center-block">Pokračovat</button>                    
+                </div>
+                <!--|ukonceni pauzi-->        
+                
+                <!--zaverecny formular-->              
+            	<form method="post" class="form-horizontal" role="form" id="udaje">
+                    <div class="well">
+                        Na závěr Tě prosím o zodpovězení několika otázek. Jakmile s nimi budeš hotov/a, klikni na
+
+„Ukončit“ a dozvíš se své výsledky. Až budou mít všichni hotovo, řeknu ještě pár slov a pak přejdeme 
+
+k vyplacení odměny.<br><br>     
+                                           			
+            			<div class="form-group">		
+            				<label class="col-sm-2 control-label left">Věk:</label>     
+            				<div class="col-sm-2">
+            					<input type="number" min="1" name="vek" id='vek' placeholder="Věk" required="required" class="form-control" autocomplete="off">
+            				</div>
+            			</div>      
+            			<div class="form-group">	
+            				<label class="col-sm-2 control-label left">Pohlaví:</label>	
+            				<div class="col-sm-10">          
+                                  <label class="radio-inline"><input type="radio" value="muž" name="pohlavi" required>Muž</label>                                                     
+                                  <label class="radio-inline"><input type="radio" value="žena" name="pohlavi" required>Žena</label>                           
+            				</div>
+            			</div> 
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-2 control-label left">Fakulta:</label>
+            				<div class="col-sm-5">
+                                <select class="form-control" id="fakulta" name="fakulta" required>
+                                  <option value="Právnická fakulta">Právnická fakulta</option>
+                                  <option value="Lékařská fakulta">Lékařská fakulta</option>
+                                  <option value="Přírodovědecká fakulta">Přírodovědecká fakulta</option>
+                                  <option value="Filozofická fakulta">Filozofická fakulta</option>
+                                  <option value="Pedagogická fakulta">Pedagogická fakulta</option>
+                                  <option value="Ekonomicko-správní fakulta">Ekonomicko-správní fakulta</option>         
+                                  <option value="Fakulta informatiky">Fakulta informatiky</option>
+                                  <option value="Fakulta sociálních studií">Fakulta sociálních studií</option>
+                                  <option value="Fakulta sportovních studií">Fakulta sportovních studií</option>
+                                </select>                                                        
+            				</div>
+            			</div>                        
+                                      
+                                    
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Při řešení úkolů v rámci experimentu jsem podal/a dobrý výkon.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                  
+                                  <label class="radio-inline"><input type="radio" value="1" name="spokojenost" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="spokojenost" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="spokojenost" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="spokojenost" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="spokojenost" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="spokojenost" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="spokojenost" required>7</label>   
+            				</div>
+            			</div>
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Řešení úkolů v průběhu experimentu mě bavilo.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                   
+                                  <label class="radio-inline"><input type="radio" value="1" name="zabavnost" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="zabavnost" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="zabavnost" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="zabavnost" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="zabavnost" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="zabavnost" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="zabavnost" required>7</label> 
+            				</div>
+            			</div>    
+
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Rád bych se zúčastnil/a dalšího experimentu s podobným typem úkolů.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                   
+                                  <label class="radio-inline"><input type="radio" value="1" name="zucastnit" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="zucastnit" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="zucastnit" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="zucastnit" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="zucastnit" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="zucastnit" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="zucastnit" required>7</label>   
+            				</div>
+            			</div>                             
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Usiloval/a jsem o dosažení co nejlepšího výsledku.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                 
+                                  <label class="radio-inline"><input type="radio" value="1" name="usilovnost" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="usilovnost" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="usilovnost" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="usilovnost" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="usilovnost" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="usilovnost" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="usilovnost" required>7</label>  
+            				</div>
+            			</div>    
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Řešení úkolů v rámci experimentu se mi nedařilo.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="dobraprace" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="dobraprace" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="dobraprace" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="dobraprace" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="dobraprace" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="dobraprace" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="dobraprace" required>7</label>   
+            				</div>
+            			</div>      
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Jsem rád/a, že experiment skončil už po dvou sériích úkolů.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="dveserie" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="dveserie" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="dveserie" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="dveserie" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="dveserie" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="dveserie" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="dveserie" required>7</label>   
+            				</div>
+            			</div>    
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Při řešení úkolů jsem se příliš nesnažil/a.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="energie" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="energie" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="energie" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="energie" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="energie" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="energie" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="energie" required>7</label>   
+            				</div>
+            			</div>     
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Měl/a jsem chuť přestat řešit úkoly ještě před vypršením časového limitu.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="chut" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="chut" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="chut" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="chut" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="chut" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="chut" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="chut" required>7</label>   
+            				</div>
+            			</div>    
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Jsem celkově spokojen/a s tím, kolik příkladů jsem spočítal/a.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="lepsivysledek" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="lepsivysledek" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="lepsivysledek" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="lepsivysledek" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="lepsivysledek" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="lepsivysledek" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="lepsivysledek" required>7</label>   
+            				</div>
+            			</div>    
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Úkoly v experimentu se mi líbily.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="libivost" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="libivost" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="libivost" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="libivost" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="libivost" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="libivost" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="libivost" required>7</label>   
+            				</div>
+            			</div>        
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Do řešení úkolů jsem investoval/a hodně energie.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="nesnazil" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="nesnazil" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="nesnazil" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="nesnazil" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="nesnazil" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="nesnazil" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="nesnazil" required>7</label>   
+            				</div>
+            			</div>  
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Mám chuť zkusit řešit ještě další podobné úkoly.<br>(1 – Vůbec nesouhlasím, 7 - Zcela souhlasím)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="podobne" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="podobne" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="podobne" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="podobne" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="podobne" required>5</label> 
+                                  <label class="radio-inline"><input type="radio" value="6" name="podobne" required>6</label> 
+                                  <label class="radio-inline"><input type="radio" value="7" name="podobne" required>7</label>   
+            				</div>
+            			</div>          
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Čas mezi první a druhou sadou úkolů jsem věnoval/a doplnění svých znalostí a hledání správného postupu k řešení příkladů.<br>(1- vůbec, 2 – z menší části, 3 – z poloviny, 4 – z větší části, 5 - zcela)</label>
+            				<div class="col-sm-10">                                                    
+                                  <label class="radio-inline"><input type="radio" value="1" name="znalosti" required>1</label>
+                                  <label class="radio-inline"><input type="radio" value="2" name="znalosti" required>2</label> 
+                                  <label class="radio-inline"><input type="radio" value="3" name="znalosti" required>3</label> 
+                                  <label class="radio-inline"><input type="radio" value="4" name="znalosti" required>4</label> 
+                                  <label class="radio-inline"><input type="radio" value="5" name="znalosti" required>5</label> 
+            				</div>
+            			</div>                                                                                                                                                                                      
+                        
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Pokud ses zabýval/a i něčím jiným, než doplňováním svých znalostí, co to bylo?</label>
+            				<div class="col-sm-10">
+                                <textarea class="form-control" rows="5" name="zabyvani" id="zabyvani"></textarea>                                                                                                
+            				</div>
+            			</div>   
+
+            			<div class="form-group">		
+            				<label class="col-sm-12 control-label left">Máš nějaké další připomínky?</label>
+            				<div class="col-sm-10">
+                                <textarea class="form-control" rows="5" name="pripominky" id="pripominky"></textarea>                                                                                                
+            				</div>
+            			</div>                                                                             
+                                
+                                       		
+            			<div class="form-group">
+            					<input type="submit" value="Potvrdit"  class="btn btn-primary center-block">            
+            			</div>
+                    </div>       
+            	</form>                	            
+                <!--|zaverecny formular-->                        
+            
+            </div>
+
+    
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+
+var udaje = {};
+var interval; //uklada timer pro jeho zastaveni
+var konec = true; //dokud neni konec, tak se pri pokusu o zmenu stranky vypisuje warning
+var casVprvni = 0;
+var globalSeconds = 0;
+
+/*poschovava nazacatku co je potreba*/
+$(document).ready(function(){
+    $('#timer').hide();
+    $('#udaje').hide();
+    $('#priklady').hide();
+    $('#hodnoceni').hide();
+    $('#hodnoceni1').hide();
+    $('#hodnoceni2').hide();
+    $('#konecPrestavka').hide();      
+    $('#konecneHodnoceni').hide();
+});
+
+
+/*pri odeslani formulare, zahaji test*/
+$(document).ready(function() {
+    $('#udaje').submit(function(e) {
+        e.preventDefault(); //zrusi odeslani formulare
+        $('#udaje').hide();
+        //prvni_priklady();
+        uloz();
+
+    });
+});
+
+function zahajit(){
+    $('#zahajeni').hide();  
+    konec = false;
+    prvni_priklady();    
+}
+
+/*spusti timer na pozadovane vteriny, po skonceni zavola zvolenou funkci*/
+function countDown(seconds, endfunction){
+    casVprvni = 0;
+        
+    $('#timer').show();         
+    $("#timer").html(('0' + parseInt(seconds/60)).slice(-2) +":"+('0' + parseInt(seconds%60)).slice(-2));  
+    interval = setInterval(function () {
+        seconds -= 1;
+        globalSeconds = seconds;                
+        $("#timer").html(('0' + parseInt(seconds/60)).slice(-2) +":"+('0' + parseInt(seconds%60)).slice(-2));
+        if(seconds == 0){
+            window.clearInterval(interval);              
+            $('#timer').hide();                         
+            
+            endfunction();                       
+        }
+        
+        //SLEDOVANI POZICE SCROLLBARU
+        if ($(document).scrollTop() < $(document).height()/2 && seconds > 300){
+            casVprvni += 1;
+            //console.log("prvni pulka");
+        }
+                
+               
+    },1000);  
+}
+
+function prvni_priklady(){    
+    /*$.ajax({
+        url: 'priklady1',
+        type: 'post',
+        dataType: "html",
+        success: function (data) {             
+            $('#priklady').html(data);
+            $('#priklady').show();                       
+        },
+
+    }); */              
+    $('#priklady').show();
+    countDown(600,konec_prvni);        
+}
+
+/*co se ma stat po skonceni prvniho vypoctu*/
+function konec_prvni(tlacitkem){
+    if (tlacitkem){
+        var r = confirm("Opravdu chcete ukončit test?");
+        if (r == false)
+            return false;        
+    }
+
+    window.clearInterval(interval);
+    
+    var priklady = {};
+        
+                
+    $("#priklady").find('.odpoved').each(function(){
+        var rozdelene = $(this).attr('name').split("-");
+        if (rozdelene.length == 2){
+            if(typeof  priklady[rozdelene[0]] === 'undefined'){
+                priklady[rozdelene[0]] = {};
+             };        
+            priklady[rozdelene[0]][rozdelene[1]] = $(this).val();                         
+        }
+        else{
+            priklady[$(this).attr('name')] = $.trim($(this).val());
+        }            
+                        
+    })    
+        
+    $('#priklady').hide();
+            
+    /*    
+    $.ajax({
+        url: 'hodnoceni',
+        type: 'post',
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {
+            $('#hodnoceni1').html(data['html']); 
+            $('#hodnoceni1').show();
+            $('#hodnoceni2').html("Výsledky prvního kola<br><br>"+data['html2']);
+            udaje['priklady1'] = data['json'];    
+            $('#konecPrestavka').show();                   
+        },
+        data: JSON.stringify({'kolo':'prvni','priklady':priklady, 'casVprvni':casVprvni})
+    });*/    
+    
+    $('#hodnoceni').show();
+    $('#hodnoceni1').show();
+     $('#konecPrestavka').show();  
+    countDown(600, konec_prestavka);        
+    //uloz();        
+}
+
+
+/*konec hledaci pauzi*/
+function konec_prestavka(tlacitkem){
+    window.clearInterval(interval);
+    
+    $('#konecPrestavka').hide();
+    $('#hodnoceni1').hide();
+    
+    udaje['ukonceniPrestavky'] = globalSeconds;
+        
+    druhe_priklady(tlacitkem);
+}
+
+function druhe_priklady(tlacitkem){
+    window.clearInterval(interval);  
+                  
+    $.ajax({
+        url: 'priklady2',
+        type: 'post',
+        dataType: "html",
+        success: function (data) {             
+            $('#priklady').html(data);
+            $('#priklady').show();
+            //document.getElementById('endButton').onclick.({tlacitkem:true}, konec_druhe);
+            
+           /* $('#endButton').click(function(){
+                konec_druhe(true);
+            });         */
+            $('#endButton').attr('onClick', 'konec_druhe(true)');
+                                  
+            
+            if (!tlacitkem){
+                alert("konec casu!");
+            }                                                       
+        },
+
+    });                        
+
+    countDown(600,konec_druhe);
+              
+}
+
+function konec_druhe(tlacitkem){
+    if (tlacitkem){
+        var r = confirm("Opravdu chcete ukončit test?");
+        if (r == false)
+            return false;        
+    }
+
+    window.clearInterval(interval);
+    
+    $('#timer').hide();
+    
+    var priklady = {};
+        
+    $("#priklady").find('.odpoved').each(function(){
+        var rozdelene = $(this).attr('name').split("-");
+        if (rozdelene.length == 2){
+            if(typeof  priklady[rozdelene[0]] === 'undefined'){
+                priklady[rozdelene[0]] = {};
+             };        
+            priklady[rozdelene[0]][rozdelene[1]] = $(this).val();                         
+        }
+        else{
+            priklady[$(this).attr('name')] =  $.trim($(this).val());
+        }            
+                        
+    })    
+        
+    $('#priklady').hide();
+        
+        
+    $.ajax({
+        url: 'hodnoceni',
+        type: 'post',
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {
+            $('#hodnoceni1').html("Výsledky druhého kola<br><br>"+data['html']);             
+            udaje['priklady2'] = data['json'];                                  
+        },
+        data: JSON.stringify({'kolo':'druhe','priklady':priklady})
+    });    
+       
+    $('#udaje').show();     
+    
+                  
+    $(document).scrollTop(0);             
+}
+
+/*ulozi udaje na server*/
+function uloz(){
+    udaje['vek'] =  $('#vek').val();    
+    udaje['pohlavi'] = $('input[name=pohlavi]:checked').val();
+    udaje['fakulta'] = $('#fakulta').val();  
+    
+    
+    udaje['spokojenost'] = $('input[name=spokojenost]:checked').val();
+    udaje['zabavnost'] = $('input[name=zabavnost]:checked').val();
+    udaje['zucastnit'] = $('input[name=zucastnit]:checked').val();
+    udaje['usilovnost'] = $('input[name=usilovnost]:checked').val();
+    udaje['dobraprace'] = $('input[name=dobraprace]:checked').val();
+    udaje['dveserie'] = $('input[name=dveserie]:checked').val();
+    udaje['energie'] = $('input[name=energie]:checked').val();   
+    udaje['chut'] = $('input[name=chut]:checked').val();     
+    udaje['lepsivysledek'] = $('input[name=lepsivysledek]:checked').val();
+    udaje['libivost'] = $('input[name=libivost]:checked').val();     
+    udaje['nesnazil'] = $('input[name=nesnazil]:checked').val();
+    udaje['podobne'] = $('input[name=podobne]:checked').val();     
+    udaje['znalosti'] = $('input[name=znalosti]:checked').val();                                                                                 
+    
+    udaje['zabyvani'] = $('#zabyvani').val();                                                                                                                                                        
+    udaje['pripominky'] = $('#pripominky').val(); 
+           
+    console.log(udaje);      
+            
+    $.ajax({
+        url: 'ulozit',
+        type: 'post',
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {  
+            konec = true;
+            $('#hodnoceni').show();                              
+            $('#hodnoceni1').show();
+            if (udaje['priklady1']['obdrzenaMotivace'] == '3')
+                $('#hodnoceni2').show(); 
+                
+                
+                celkemPrvni = 0
+                for (typ in udaje['priklady1']['typy']){
+                    console.log(udaje['priklady1']['typy'][typ]);
+                    celkemPrvni += parseInt(udaje['priklady1']['typy'][typ]['celkem']) - parseInt(udaje['priklady1']['typy']['spravne']);
+                } 
+                
+                var celkemPrvni = 0;    
+                celkemPrvni += udaje['priklady1']['typy']['Logaritmické funkce']['celkem'] - udaje['priklady1']['typy']['Logaritmické funkce']['spravne'];
+                celkemPrvni += udaje['priklady1']['typy']['Kombinatorika']['celkem'] - udaje['priklady1']['typy']['Kombinatorika']['spravne'];
+                celkemPrvni += udaje['priklady1']['typy']['Soustavy rovnic']['celkem'] - udaje['priklady1']['typy']['Soustavy rovnic']['spravne']; 
+                
+                var celkemDruhe = 0;    
+                celkemDruhe += udaje['priklady2']['typy']['Logaritmické funkce']['celkem'] - udaje['priklady2']['typy']['Logaritmické funkce']['spravne'];
+                celkemDruhe += udaje['priklady2']['typy']['Kombinatorika']['celkem'] - udaje['priklady2']['typy']['Kombinatorika']['spravne'];
+                celkemDruhe += udaje['priklady2']['typy']['Soustavy rovnic']['celkem'] - udaje['priklady2']['typy']['Soustavy rovnic']['spravne'];     
+                     
+                $('#celkemPrvniKolo').html(celkemPrvni);
+                $('#celkemDruheKolo').html(celkemDruhe);
+                $('#celkemZlepseni').html(celkemPrvni - celkemDruhe);    
+                
+                $('#konecneHodnoceni').show();                           
+        },
+        data: JSON.stringify(udaje)
+    });
+        
+}
+
+window.onbeforeunload = function() {
+    if(!konec)
+        return 'Neopouštějte stránku v době experimentu! Pokud vše nedokončíte, dosavadní průběh se ztratí.';
+}
+
+</script>         

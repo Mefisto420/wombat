@@ -1,0 +1,182 @@
+    <div id="priklady" style="display: block;">
+    <div class="well">
+        <h3>Příklad 1</h3>
+        <hr>
+        <h4>Vyřešte pro x: log<sub>6</sub> (x+1) + log<sub>6</sub> x = 1</h4> 
+     
+        <input type="text" class="odpoved" name="1" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 2</h3>
+        <hr>
+        <h4>Na běžecké trati běží 8 závodníků. Do finále postupují první tři. Kolik je možností na postupující trojici?</h4> 
+     
+        <input type="text" class="odpoved" name="2" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 3</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 2x - 3y + z + 2u = 0 <br><br> 3x + y - 2z – u = 6 <br><br> 4x – 2y - 3z - 4u = -6 <br><br> x + 2y + 3z - 2u = -7</h4> 
+     
+        
+        <label>u</label>     
+        <div>
+            <input class="odpoved" name="3-u" type="text" autocomplete="off">
+        </div>        
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="3-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="3-y" type="text" autocomplete="off">
+        </div>        
+        
+        <label>z</label>     
+        <div>
+            <input class="odpoved" name="3-z" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 4</h3>
+        <hr>
+        <h4>Vyřešte pro x: log<sub>2</sub> (x+1) = 3 </h4> 
+     
+        <input type="text" class="odpoved" name="4" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 5</h3>
+        <hr>
+        <h4>Kolika způsoby lze postavit do řady vedle sebe na poličku 15 různých knih?</h4> 
+     
+        <input type="text" class="odpoved" name="5" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 6</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé:<br><br> x + y + 2z = -1 <br><br> 2x – y + 2z = -4 <br><br> 4x + y + 4z = -2</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="6-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="6-y" type="text" autocomplete="off">
+        </div>        
+        
+        <label>z</label>     
+        <div>
+            <input class="odpoved" name="6-z" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 7</h3>
+        <hr>
+        <h4>Vyřešte pro x: -3 + log x = -1 </h4> 
+     
+        <input type="text" class="odpoved" name="7" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 8</h3>
+        <hr>
+        <h4>Vyčíslete: 8!/4!</h4> 
+     
+        <input type="text" class="odpoved" name="8" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 9</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 7x - 3y = 15 <br><br> 5x + 6y = 27</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="9-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="9-y" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 10</h3>
+        <hr>
+        <h4>Vyřešte pro x: log 1000 = x</h4> 
+     
+        <input type="text" class="odpoved" name="10" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 11</h3>
+        <hr>
+        <h4>Vyčíslete: 5!</h4> 
+     
+        <input type="text" class="odpoved" name="11" autocomplete="off">                                                    
+    
+     
+    </div>
+
+    <div class="well">
+        <h3>Příklad 12</h3>
+        <hr>
+        <h4>Určete hodnoty pro všechny neznámé: <br><br> 3x – y = 8 <br><br> 2x + y = 7</h4> 
+     
+        
+        <label>x</label>     
+        <div>
+            <input class="odpoved" name="12-x" type="text" autocomplete="off">
+        </div>        
+        
+        <label>y</label>     
+        <div>
+            <input class="odpoved" name="12-y" type="text" autocomplete="off">
+        </div>        
+                  
+    
+    
+     
+    </div>
+  
+
+<button type="button" id="endButton" onclick="konec_prvni(true)" class="btn btn-primary center-block">Ukončit</button> </div>
